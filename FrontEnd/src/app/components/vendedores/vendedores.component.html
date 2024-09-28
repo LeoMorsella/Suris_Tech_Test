@@ -1,0 +1,7 @@
+<select>
+  <option>Seleccione un vendedor</option>
+<option *ngFor="let vendedor of vendedorService.list" 
+    [value]="vendedor.id">
+  {{vendedor.descripcion}}
+</option>
+</select>

@@ -1,0 +1,27 @@
+<table>
+    <thead>
+    <tr>
+        <td>Seleccion</td>
+        <td>Codigo</td>
+        <td>Descripcion</td>
+        <td>Precio</td>
+        <td>Deposito</td>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let articulo of articuloService.list">
+        <td><input type="checkbox" [(ngModel)]="articulo.checked"></td>
+        <td>{{articulo.codigo}}</td>
+        <td>{{articulo.descripcion}}</td>
+        <td>{{articulo.precio}}</td>
+        <td>{{articulo.deposito}}</td>
+    </tr>
+</tbody>
+</table>
+
+<button type="button" (click)="articuloService.guardarPedido()">Guardar Pedido</button>
+
+<h2>Precio Final: {{articuloService.precio}}</h2>
+<h2>Estado del pedido: {{articuloService.estado}}</h2>
+
+<h2>Descripcion: {{articuloService.descripcion}}</h2>

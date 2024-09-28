@@ -1,0 +1,14 @@
+
+header{
+    background-color: aquamarine;
+    height: 50px;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+section{
+    background-color: rgb(104, 195, 231);
+    height: 100%;
+    width: 100%;
+}
